@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_products_colors",
+  "info": {
+    "displayName": "colors"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "hexadecimal": {
+      "type": "string",
+      "default": "#ffffff",
+      "required": true,
+      "unique": false,
+      "regex": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+    },
+    "productImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

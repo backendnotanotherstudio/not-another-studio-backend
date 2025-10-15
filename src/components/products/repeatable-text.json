@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_products_repeatable_texts",
+  "info": {
+    "displayName": "repeatableText"
+  },
+  "options": {},
+  "attributes": {
+    "option": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
