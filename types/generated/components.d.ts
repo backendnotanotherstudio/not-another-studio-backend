@@ -1,5 +1,15 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface GeneralProjectsText extends Struct.ComponentSchema {
+  collectionName: 'components_general_projects_texts';
+  info: {
+    displayName: 'projectsText';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+  };
+}
+
 export interface ProductsColors extends Struct.ComponentSchema {
   collectionName: 'components_products_colors';
   info: {
@@ -38,6 +48,7 @@ export interface ProductsSelection extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'general.projects-text': GeneralProjectsText;
       'products.colors': ProductsColors;
       'products.repeatable-text': ProductsRepeatableText;
       'products.selection': ProductsSelection;

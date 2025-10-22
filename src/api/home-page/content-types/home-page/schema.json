@@ -14,13 +14,18 @@
     "heroDesc": {
       "type": "text"
     },
-    "images": {
+    "fallbackImages": {
       "type": "media",
       "multiple": true,
       "required": true,
       "allowedTypes": [
         "images"
       ]
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
     }
   }
 }
